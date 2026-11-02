@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Route Mantra - Explore. Discover. Achieve.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .hero-gradient { background: radial-gradient(circle at top right, rgba(245, 158, 11, 0.15), transparent 50%), radial-gradient(circle at bottom left, rgba(16, 185, 129, 0.1), transparent 50%); }
+        .glass-card { background: rgba(15, 23, 42, 0.75); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .gold-metallic-text { background: linear-gradient(135deg, #FDE68A 0%, #D97706 50%, #B45309 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col antialiased selection:bg-amber-500 selection:text-slate-950">
+
+    <!-- Header Navigation -->
+    <header class="sticky top-0 z-50 bg-slate-950/80 backdrop-blur-lg border-b border-slate-800/60">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <svg class="w-11 h-11 transition-transform group-hover:scale-105" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="46" stroke="url(#goldGrad)" stroke-width="4" fill="#0F172A"/>
+                    <circle cx="50" cy="50" r="41" stroke="#D97706" stroke-width="1.5" stroke-dasharray="4 2"/>
+                    <path d="M 50 18 L 53 45 L 82 50 L 53 55 L 50 82 L 47 55 L 18 50 L 47 45 Z" stroke="#FDE68A" stroke-width="1.5" fill="none" opacity="0.6"/>
+                    <path d="M30 40 C30 30, 42 28, 50 35 C58 28, 70 30, 70 40 C70 52, 58 54, 50 64 C45 69, 35 73, 25 73" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" fill="none"/>
+                    <path d="M48 28 L68 55 L78 55" stroke="url(#goldGrad)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <path d="M68 62 L74 54 L84 62 L90 56" stroke="#D97706" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FDE68A" />
+                            <stop offset="50%" stop-color="#D97706" />
+                            <stop offset="100%" stop-color="#92400E" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-wider text-slate-100 group-hover:text-amber-400 transition-colors">ROUTE<span class="text-amber-500">MANTRA</span></span>
+                    <span class="text-[9px] font-semibold tracking-[0.25em] text-amber-300/80 uppercase">Explore. Discover. Achieve.</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#trips" class="hover:text-amber-400 transition-colors">Destinations</a>
+                <a href="#builder" class="hover:text-amber-400 transition-colors">Custom Trip</a>
+                <a href="#about" class="hover:text-amber-400 transition-colors">Why Us</a>
+                <a href="#reviews" class="hover:text-amber-400 transition-colors">Reviews</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button onclick="openWhatsApp('Hi Route Mantra team! I would like to inquire about your upcoming group trips.')" class="bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold px-5 py-2.5 rounded-full flex items-center gap-2 shadow-lg shadow-emerald-500/20 transition-all transform hover:-translate-y-0.5">
+                    <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i>
+                    <span>WhatsApp Booking</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative py-20 lg:py-28 hero-gradient overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <span class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold uppercase tracking-wider mb-6">
+                <i data-lucide="compass" class="w-4 h-4"></i> India's Premier Backpacking & Adventure Club
+            </span>
+            <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white mb-6 leading-tight">
+                Explore The Unexplored With <br/>
+                <span class="gold-metallic-text">Route Mantra</span>
+            </h1>
+            <p class="max-w-2xl mx-auto text-lg text-slate-300 mb-10 leading-relaxed">
+                Join curated group backpacking expeditions, Himalayan treks, and offbeat road trips designed for young travelers, thrill-seekers, and solo wanderers.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#trips" class="bg-amber-500 hover:bg-amber-600 text-slate-950 font-bold px-8 py-3.5 rounded-xl transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                    <i data-lucide="map-pin" class="w-5 h-5"></i> Explore Trips
+                </a>
+                <a href="#builder" class="bg-slate-900 border border-slate-700 hover:border-slate-500 text-slate-200 font-semibold px-8 py-3.5 rounded-xl transition-all flex items-center gap-2">
+                    <i data-lucide="sliders" class="w-5 h-5 text-amber-400"></i> Plan Custom Trip
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Expeditions -->
+    <section id="trips" class="py-20 bg-slate-900/50 border-t border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12">
+                <h2 class="text-3xl font-bold text-white mb-2">Upcoming Expeditions</h2>
+                <p class="text-slate-400">Handcrafted group departures for memorable travel experiences</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Spiti Valley -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1626621341517-bbf3d9990a23?auto=format&fit=crop&w=1000&q=80" alt="Spiti Valley" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Popular Expedition</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i> 7 Days / 6 Nights</span>
+                                <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Delhi / Chandigarh</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Spiti Valley Backpackers Circuit</h3>
+                            <p class="text-slate-400 text-sm mb-4">Explore high-altitude monasteries, Chandra Taal Lake, and Hikkim's highest post office.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800 mb-4">
+                                <div>
+                                    <span class="text-xs text-slate-400 block">Starts from</span>
+                                    <span class="text-2xl font-extrabold text-amber-400">₹18,500</span>
+                                </div>
+                            </div>
+                            <button onclick="openWhatsApp('Hi Route Mantra! I am interested in booking the Spiti Valley Backpackers Circuit.')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                                <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i> WhatsApp Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kedarkantha Trek -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=1000&q=80" alt="Kedarkantha Trek" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-emerald-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Winter Special</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i> 5 Days / 4 Nights</span>
+                                <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Dehradun Pickup</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Kedarkantha Summit Trek</h3>
+                            <p class="text-slate-400 text-sm mb-4">Conquer 12,500 ft summit, camp in snow glades, and witness panoramic Himalayan views.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800 mb-4">
+                                <div>
+                                    <span class="text-xs text-slate-400 block">Starts from</span>
+                                    <span class="text-2xl font-extrabold text-amber-400">₹7,999</span>
+                                </div>
+                            </div>
+                            <button onclick="openWhatsApp('Hi Route Mantra! I am interested in the Kedarkantha Summit Trek.')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                                <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i> WhatsApp Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Jibhi & Tirthan Valley -->
+                <div class="glass-card rounded-2xl overflow-hidden hover:border-amber-500/50 transition-all group flex flex-col">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" alt="Jibhi & Tirthan" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <span class="absolute top-4 left-4 bg-amber-500 text-slate-950 text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wider">Unwind & Relax</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-slate-400 mb-2">
+                                <span class="flex items-center gap-1"><i data-lucide="clock" class="w-3.5 h-3.5 text-amber-400"></i> 3 Days / 2 Nights</span>
+                                <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Delhi Pickup</span>
+                            </div>
+                            <h3 class="text-xl font-bold text-white mb-3">Jibhi & Tirthan Valley Retreat</h3>
+                            <p class="text-slate-400 text-sm mb-4">Cozy wooden cottage stays, Jalori Pass trek, Serolsar Lake, and soothing trout streams.</p>
+                        </div>
+                        <div>
+                            <div class="flex items-center justify-between pt-4 border-t border-slate-800 mb-4">
+                                <div>
+                                    <span class="text-xs text-slate-400 block">Starts from</span>
+                                    <span class="text-2xl font-extrabold text-amber-400">₹5,999</span>
+                                </div>
+                            </div>
+                            <button onclick="openWhatsApp('Hi Route Mantra! I am interested in the Jibhi & Tirthan Valley Retreat.')" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold py-3 rounded-xl flex items-center justify-center gap-2 transition-colors">
+                                <i data-lucide="message-circle" class="w-4 h-4 fill-current"></i> WhatsApp Inquiry
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Trip Builder Section -->
+    <section id="builder" class="py-20 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="glass-card rounded-3xl p-8 sm:p-12 border border-amber-500/20">
+            <div class="text-center mb-10">
+                <span class="text-amber-400 text-xs font-bold tracking-widest uppercase block mb-2">Tailormade Itineraries</span>
+                <h2 class="text-3xl font-extrabold text-white">Custom Trip Builder</h2>
+                <p class="text-slate-400 text-sm mt-1">Design your dream adventure and send your inquiry instantly to WhatsApp.</p>
+            </div>
+            
+            <form id="customTripForm" onsubmit="submitCustomTrip(event)" class="space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Destination / Region</label>
+                        <select id="customDest" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:border-amber-500 outline-none">
+                            <option value="Spiti Valley">Spiti Valley Circuit</option>
+                            <option value="Kedarkantha Trek">Kedarkantha Trek</option>
+                            <option value="Jibhi & Tirthan">Jibhi & Tirthan Valley</option>
+                            <option value="Leh Ladakh">Leh Ladakh Expedition</option>
+                            <option value="Meghalaya Backpacking">Meghalaya Backpacking</option>
+                            <option value="Custom Offbeat Location">Other Custom Destination</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Number of Travelers</label>
+                        <input type="number" id="customPax" min="1" value="2" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:border-amber-500 outline-none">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Preferred Month / Date</label>
+                        <input type="text" id="customDate" placeholder="e.g. Next Month / Oct 2026" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:border-amber-500 outline-none">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Trip Style</label>
+                        <select id="customStyle" class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:border-amber-500 outline-none">
+                            <option value="Group Departure">Group Departure (Join-in)</option>
+                            <option value="Private Group">Private Group Custom Trip</option>
+                            <option value="Luxury Cottages">Luxury Stays / Glamping</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs font-bold uppercase tracking-wider text-slate-300 mb-2">Special Requirements or Notes</label>
+                    <textarea id="customNotes" rows="3" placeholder="Mention any specific activities, dietary needs, or pickup preferences..." class="w-full bg-slate-900 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 focus:border-amber-500 outline-none"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-extrabold py-4 rounded-xl flex items-center justify-center gap-2 shadow-lg shadow-emerald-500/20 transition-all text-lg">
+                    <i data-lucide="message-circle" class="w-6 h-6 fill-current"></i> Send Custom Request via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="about" class="py-20 bg-slate-900/40 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-2">Why Travel With Route Mantra?</h2>
+                <p class="text-slate-400">Designed by travelers, for passionate explorers.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="shield-check" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">100% Verified Stays</h3>
+                    <p class="text-slate-400 text-sm">Handpicked campsites, heritage homestays, and boutique hotels with top-notch hygiene and safety.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="users" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Expert Trip Captains</h3>
+                    <p class="text-slate-400 text-sm">Experienced, certified mountain guides and fun trip captains accompanying every single batch.</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl">
+                    <div class="w-12 h-12 bg-amber-500/10 text-amber-400 rounded-xl flex items-center justify-center mb-6">
+                        <i data-lucide="heart" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Vibrant Community</h3>
+                    <p class="text-slate-400 text-sm">Meet solo travelers, like-minded creators, and adventure enthusiasts. Make friendships that last a lifetime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 border-t border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-2">Loved By 12,500+ Travelers</h2>
+                <p class="text-slate-400">See what our community says about their expeditions with Route Mantra.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-slate-300 text-sm mb-4">"The Spiti Valley trip was flawlessly organized! Our trip captain made sure everyone was comfortable and safe at high altitudes."</p>
+                    <span class="text-xs font-bold text-white block">— Ananya Sharma</span>
+                    <span class="text-[11px] text-slate-500">Spiti Valley Circuit</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-slate-300 text-sm mb-4">"Incredible experience on the Kedarkantha trek. Wonderful food, warm tents, and unforgettable sunset views at the summit."</p>
+                    <span class="text-xs font-bold text-white block">— Rohan Verma</span>
+                    <span class="text-[11px] text-slate-500">Kedarkantha Summit Trek</span>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex text-amber-400 mb-4">★★★★★</div>
+                    <p class="text-slate-300 text-sm mb-4">"Jibhi was the perfect weekend getaway. The wooden cottage stays were cozy and scenic. Will definitely book again!"</p>
+                    <span class="text-xs font-bold text-white block">— Priya Menon</span>
+                    <span class="text-[11px] text-slate-500">Jibhi & Tirthan Retreat</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-auto bg-slate-950 border-t border-slate-800/80 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-slate-400 text-sm">
+            <p class="mb-2">© 2026 Route Mantra. All rights reserved. Explore. Discover. Achieve.</p>
+            <p class="text-xs text-slate-500">Direct WhatsApp Booking & Support: +91 8700769851</p>
+        </div>
+    </footer>
+
+    <!-- Global JS helper -->
+    <script>
+        lucide.createIcons();
+        const WHATSAPP_NUMBER = "918700769851";
+
+        function openWhatsApp(customText) {
+            const encodedMessage = encodeURIComponent(customText);
+            const waUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodedMessage}`;
+            window.open(waUrl, '_blank');
+        }
+
+        function submitCustomTrip(event) {
+            event.preventDefault();
+            const dest = document.getElementById('customDest').value;
+            const pax = document.getElementById('customPax').value;
+            const date = document.getElementById('customDate').value || 'Flexible';
+            const style = document.getElementById('customStyle').value;
+            const notes = document.getElementById('customNotes').value || 'None';
+
+            const message = `Hi Route Mantra! I want to plan a custom trip:
+
+- Destination: ${dest}
+- Travelers: ${pax}
+- Preferred Time: ${date}
+- Trip Style: ${style}
+- Notes: ${notes}`;
+            openWhatsApp(message);
+        }
+    </script>
+</body>
+</html>
